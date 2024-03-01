@@ -2,9 +2,9 @@
 import React from 'react';
 import { Route, Link, Routes } from 'react-router-dom';
 import UserDashboard from './UserDashboard';
-import TimeCapsuleList from './TimeCapsule/TimeCapsuleList';
+import TimeCapsuleList from './TimeCapsule/VirtualTimeCapsuleList';
 import CreateTimeCapsuleForm from './TimeCapsule/CreateTimeCapsuleForm';
-import EditTimeCapsuleForm from './TimeCapsule/EditTimeCapsule';
+import EditTimeCapsuleForm from './TimeCapsule/EditTimeCapsuleForm';
 import CreateMemory from './MemorySection/CreateMemory'
 import EditMemory from './MemorySection/EditMemory';
 import MemoryList from './MemorySection/MemoryList';
@@ -25,11 +25,7 @@ const Dashboard = () => {
                 Dashboard
               </Link>
             </li>
-            <li className=' p-2 m-1 rounded-md  bg-slate-50 hover:bg-blue-200'>
-              <Link to="/dashboard/timecapsulelist" className="text-gray-700  font-bold hover:underline">
-                Time Capsules
-              </Link>
-            </li>
+            
             <li className=' p-2 m-1 rounded-md bg-slate-50 hover:bg-blue-200'>
               <Link to="/dashboard/createtimecapsule" className="text-gray-700  font-bold hover:underline">
                 Create Time Capsule
@@ -41,10 +37,11 @@ const Dashboard = () => {
               </Link>
             </li>
             <li className=' p-2 m-1 rounded-md  bg-slate-50 hover:bg-blue-200'>
-              <Link to="/dashboard/memorylist" className="text-gray-700  font-bold hover:underline">
-                Memories
+              <Link to="/dashboard/timecapsulelist" className="text-gray-700  font-bold hover:underline">
+                Show VTC
               </Link>
             </li>
+            
             <li className=' p-2 m-1 rounded-md  bg-slate-50 hover:bg-blue-200'>
               <Link to="/dashboard/creatememory" className="text-gray-700  font-bold hover:underline">
                 Create Memory
@@ -55,13 +52,18 @@ const Dashboard = () => {
                 Edit Memory
               </Link>
             </li>
+            <li className=' p-2 m-1 rounded-md  bg-slate-50 hover:bg-blue-200'>
+              <Link to="/dashboard/memorylist" className="text-gray-700  font-bold hover:underline">
+                Memories
+              </Link>
+            </li>
             {/* Add more links or operations as needed */}
           </ul>
         </aside>
 
         {/* Main Content */}
-        <div className=" w-full  flex overflow-y-scroll no-scrollbar ">
-        <div className="w-1/2 border  rounded-md p-4 m-3">
+        <div className=" w-full  flex  ">
+        <div className="w-1/2 border  rounded-md p-4 m-3     overflow-y-scroll no-scrollbar ">
         <main >
           {/* Routes for Main Content */}
           <Routes>

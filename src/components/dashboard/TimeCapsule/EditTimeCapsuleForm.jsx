@@ -1,13 +1,37 @@
-// CreateTimeCapsuleForm.jsx
-import React, { useState } from 'react';
+// EditTimeCapsuleForm.jsx
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const CreateTimeCapsuleForm = () => {
+const EditTimeCapsuleForm = ({ timeCapsuleId }) => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [previewURLs, setPreviewURLs] = useState([]);
   const [reminderDate, setReminderDate] = useState('');
+
+  useEffect(() => {
+    // Fetch existing data for the time capsule based on the provided timeCapsuleId
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/api/time-capsules/${timeCapsuleId}`);
+        const timeCapsuleData = response.data; // Adjust this based on your API response format
+
+        // Set state with existing data
+        setTitle(timeCapsuleData.title);
+        setDescription(timeCapsuleData.description);
+        setReminderDate(timeCapsuleData.reminderDate);
+        // Assume that the images array is present in the timeCapsuleData
+        setSelectedFiles(timeCapsuleData.images);
+        // Generate preview URLs for the selected files
+        const newPreviewURLs = timeCapsuleData.images.map((image) => URL.createObjectURL(image));
+        setPreviewURLs(newPreviewURLs);
+      } catch (error) {
+        console.error('Error fetching time capsule data:', error);
+      }
+    };
+
+    fetchData(); // Fetch data when the component mounts
+  }, [timeCapsuleId]);
 
   const handleFileChange = (e) => {
     const files = e.target.files;
@@ -16,7 +40,7 @@ const CreateTimeCapsuleForm = () => {
     setSelectedFiles([...selectedFiles, ...files]);
 
     // Generate preview URLs for the selected files
-    const newPreviewURLs = Array.from(files).map(file => URL.createObjectURL(file));
+    const newPreviewURLs = Array.from(files).map((file) => URL.createObjectURL(file));
     setPreviewURLs([...previewURLs, ...newPreviewURLs]);
   };
 
@@ -46,31 +70,24 @@ const CreateTimeCapsuleForm = () => {
     });
 
     try {
-      // Use axios to send a POST request to your server for file upload
-      const response = await axios.post('/api/upload', formData);
+      // Use axios to send a PUT request to update the time capsule
+      const response = await axios.put(`/api/time-capsules/${timeCapsuleId}`, formData);
 
       // Handle success, e.g., show a success message
-      console.log('Files uploaded successfully:', response.data);
-
-      // Reset form fields and previews after successful upload
-      setTitle('');
-      setDescription('');
-      setReminderDate('');
-      setSelectedFiles([]);
-      setPreviewURLs([]);
+      console.log('Time Capsule updated successfully:', response.data);
     } catch (error) {
       // Handle errors, e.g., show an error message
-      console.error('Error uploading files:', error);
+      console.error('Error updating time capsule:', error);
     }
   };
 
-  
-
   return (
     <div className="max-w-md mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Create Time Capsule</h2>
+      <h2 className="text-2xl font-bold mb-4">Edit Time Capsule</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-4">
+
+
+      <div className="mb-4">
           <label htmlFor="title" className="block text-gray-700">Title:</label>
           <input
             type="text"
@@ -92,6 +109,7 @@ const CreateTimeCapsuleForm = () => {
           ></textarea>
         </div>
 
+        {/* ... (previous form fields) */}
         <div className="mb-4">
           <label htmlFor="reminderDate" className="block text-gray-700">Reminder Date:</label>
           <input
@@ -103,10 +121,7 @@ const CreateTimeCapsuleForm = () => {
             required
           />
         </div>
-
-
-
-
+        {/* ... (remaining form fields) */}
         <div className="mb-4">
           <label htmlFor="file" className="block text-gray-700">Upload Images:</label>
           <input
@@ -138,15 +153,15 @@ const CreateTimeCapsuleForm = () => {
             </div>
           </div>
         )}
-
-
-
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
-          Create Time Capsule
+          Edit Time Capsule
         </button>
+
+         
+
       </form>
     </div>
   );
 };
 
-export default CreateTimeCapsuleForm;
+export default EditTimeCapsuleForm;

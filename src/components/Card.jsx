@@ -7,12 +7,12 @@ const Card = ({ title, backgroundImage }) => {
     >
       <img
         src={backgroundImage}
-        alt="Card background image"
+        alt="image"
         className="w-full h-full bg-cover bg-center rounded-md object-cover"
       />
       <div className="h-36 w-36 absolute inset-0 flex items-center justify-center  ">
         <button className="text-gray-700 text-2xl font-bold absolute inset-x-0 bottom-0 h-8 
-         rounded-xl text-center   m-1 bg-blue-500 ">{title}</button>
+          text-center    bg-blue-500 ">{title}</button>
       </div>
     </div>
   );
