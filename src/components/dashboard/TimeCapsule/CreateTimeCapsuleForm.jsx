@@ -32,7 +32,7 @@ const CreateTimeCapsuleForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+   // e.preventDefault();
 
     // Create a FormData object to send the files
     const formData = new FormData();
@@ -46,6 +46,12 @@ const CreateTimeCapsuleForm = () => {
     });
 
     try {
+      // to checks the upload data
+      for (const entry of formData.entries()) {
+        console.log(entry);
+      }
+
+
       // Use axios to send a POST request to your server for file upload
       const response = await axios.post('/api/upload', formData);
 
@@ -67,7 +73,7 @@ const CreateTimeCapsuleForm = () => {
   
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-xl mx-auto p-8 lg:p-12 bg-blue-50 rounded-lg shadow-lg  sm:max-w-xl  md:max-w-2xl lg:max-w-3xl ">
       <h2 className="text-2xl font-bold mb-4">Create Time Capsule</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -124,12 +130,12 @@ const CreateTimeCapsuleForm = () => {
             <label className="block text-gray-700">Image Previews:</label>
             <div className="flex flex-wrap gap-2">
               {previewURLs.map((previewURL, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative   ">
                   <img src={previewURL} alt={`Preview ${index + 1}`} className="w-32 h-24 object-cover rounded" />
                   <button
                     type="button"
                     onClick={() => removeImage(index)}
-                    className="absolute top-0 right-0 p-1 bg-red-500 text-white rounded-full"
+                    className="absolute top-0 right-0   h-6 w-6  text-red-500 bg-slate-700 rounded-full"
                   >
                     X
                   </button>
@@ -141,7 +147,7 @@ const CreateTimeCapsuleForm = () => {
 
 
 
-        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
+        <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600    focus:outline-none focus:ring focus:border-blue-300">
           Create Time Capsule
         </button>
       </form>
