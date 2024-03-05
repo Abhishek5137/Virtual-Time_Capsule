@@ -36,7 +36,7 @@ const Navbar = ({ toggleAuthModal, auth }) => {
 
           <Link to="/" >
             <img
-              src="\src\assets\myvtc-logo.png"
+              src="/images/myvtc-logo.png"
               className="h-14 w-32 m-0 p-1 rounded-lg   "
               alt="logo"
             />

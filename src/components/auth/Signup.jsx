@@ -20,7 +20,7 @@ const Signup = ({ onSignup }) => {
         <div
           className="mr-8 min-w-72 min-h-96 flex justify-center items-center"
           style={{
-            backgroundImage: `url('/src/assets/signupvtc.jpg')`, // Replace with the actual path to your image
+            backgroundImage: `url('/images/signupvtc.jpg')`, // Replace with the actual path to your image
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             width: '200px', // Adjust the width as needed

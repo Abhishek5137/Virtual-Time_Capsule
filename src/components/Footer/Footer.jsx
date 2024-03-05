@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <img
-          src="\src\assets\myvtc-logo.png" // Replace with the actual path to your logo
+          src="/images/myvtc-logo.png" // Replace with the actual path to your logo
           alt="Virtual Time Capsule Logo"
           className='h-14 w-32 p-0 m-0 rounded-xl'
         />
@@ -21,9 +21,9 @@ const Footer = () => {
         {/* Contact Us */}
         <div>
           <h3 className="text-lg font-bold mb-2">Contact Us</h3>
-          <p>Email: info@virtualtimecapsule.com</p>
-          <p>Address: 123 Memory Lane, Nostalgia City</p>
-          <p>Phone No: 1234567890</p>
+          <p>Email: abhishek5137599@gmail.com</p>
+          <p>Address: kanpur</p>
+          <p>Phone No: 7991869850</p>
         </div>
 
         

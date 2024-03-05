@@ -19,7 +19,7 @@ const IntroductionPage = () => {
     // height: "",
     // width:"100%",
     backgroundImage:
-      "url(/src/assets/vtc.jpg)",
+      "url(/images/vtc.jpg)",
     // fontSize: "50px",
     // backgroundSize: "cover",
     // backgroundRepeat: "no-repeat",
@@ -130,7 +130,7 @@ const IntroductionPage = () => {
         <div className="max-w-5xl p-8  shadow-md rounded-md flex mt-8">
           <div className="w-1/2 pr-8">
             <img
-              src="\src\assets\memoriesimg.png" // Replace with the actual path to your second image
+              src="/images/memoriesimg.png" // Replace with the actual path to your second image
               alt="Virtual Time Capsule Image 2"
               className="w-full h-auto rounded-md"
             />
@@ -182,7 +182,7 @@ const IntroductionPage = () => {
           </div>
           <div className="w-1/2 pr-8">
             <img
-              src="\src\assets\timecapsuleImg.jpeg" // Replace with the actual path to your third image
+              src="/images/timecapsuleImg.jpeg" // Replace with the actual path to your third image
               alt="Virtual Time Capsule Image 3"
               className="w-full h-auto rounded-md"
             />
