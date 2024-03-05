@@ -19,7 +19,7 @@ const IntroductionPage = () => {
     // height: "",
     // width:"100%",
     backgroundImage:
-      "url(/images/vtc.jpg)",
+      "url(/src/assets/vtc.jpg)",
     // fontSize: "50px",
     // backgroundSize: "cover",
     // backgroundRepeat: "no-repeat",
