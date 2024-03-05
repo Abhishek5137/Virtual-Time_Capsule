@@ -79,14 +79,14 @@ New techniques will enhance data integrity and the lifespan of digital archives
 
 <h2>Project Screenshots:</h2>
 
-<div style="display: flex ">
-<img src="/pubic/screenshot/img1.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img2.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img3.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img4.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img5.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img6.png" alt="project-screenshot" width="400" height="">
-<img src="/pubic/screenshot/img7.png" alt="project-screenshot" width="400" height="">
+<div style="display: flex  ">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/8f599e59-9211-4f74-9502-796ee72b093c" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/22cd5791-f28b-441e-b46a-6536e2f302f8" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/34421b29-ab59-4034-bdf5-becbdd7bd34a" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/b33eb1fc-b077-4e5c-aa92-c8f4fbbb1615" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/b123c6a2-0739-4073-9e93-36ce3bc77f52" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/76b9ab30-ca92-4027-969b-493cba2fe374" alt="project-screenshot" width="500" height="">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/258c9dc1-3823-4048-9e42-9d9cfd1ebed7" alt="project-screenshot" width="500" height="">
 </div>
 
 
