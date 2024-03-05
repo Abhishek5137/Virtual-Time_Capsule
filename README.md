@@ -5,44 +5,45 @@
 A virtual time capsule is a digital repository for preserving memories and 
 information to be accessed in the future.
 
-# Purpose and Significance of a Virtual Time capsule
+<h1>Purpose and Significance of a Virtual Time capsule</h1>
 
-## 1. Preserving Memories
+<h3>  1. Preserving Memories</h3>
     It allows individuals to document and safeguard their most cherished experiences  artefacts.
 
-## 2. Connecting Generations
+<h3> 2. Connecting Generations </h3>
    It bridges the gap between different time periods, enabling future generations to learn about 
     the past.
 
-## 3. Celebrating Milestones
+<h3>  3. Celebrating Milestones</h3>
   
   Virtual time capsules can commemorate special events and achievements for posterity.
 
 #  Choosing the Contents of a Virtual Time Capsule
 
-## 1. Photos and Videos
+<h3>  1. Photos and Videos</h3>
 Visual records of everyday life and 
 special occasions.
- ## 2. Letters and Diaries
+
+ <h3> 2. Letters and Diaries</h3>
 Personal writings that provide insight 
 into the emotions and thoughts of the 
 author.
-## 3. Artwork and Music
+<h3>  3. Artwork and Music</h3>
 Expressive mediums that capture the essence of a specific time and culture
 
  # Preserving and Storing a Virtual Time Capsule
 
- ## Digital Backup
+ <h3> i. Digital Backup</h3>
 Store the time capsule on 
 multiple devices to prevent 
 data loss.
 
-## Cloud Storage
+<h3> ii. Cloud Storage</h3>
 Utilize reliable cloud 
 platforms for long-term 
 archival of digital items.
 
-## Metadata Management
+<h3> iii. Metadata Management</h3>
 Include detailed descriptions 
 to aid in the organization and 
 retrieval of items.
@@ -50,36 +51,43 @@ retrieval of items.
 
 # Sharing and Accessing a Virtual Time Capsule
 
-## Family Collaboration
+<h3> i. Family Collaboration</h3>
 Share the time capsule with 
 relatives to enrich collective 
 history.
 
-## Secure Access
+<h3> ii. Secure Access</h3> 
 Implement strong access 
 controls to safeguard privacy and 
-sensitive information.
+sensitive informations
 
-# Future Proofing
+<h3> iii. Future Proofing</h3> 
 Ensure compatibility with 
 evolving technologies for 
 prolonged accessibility.
 
 
 # Conclusion and Future Possibilities
- ## 1.Artificial Intelligence
+<h3>  1.Artificial Intelligence </h3> 
 AI advancements may enable personalized and intelligent curation of time 
 capsules.
-## 2.Immersive Experiences
+<h3>  2.Immersive Experiences</h3> 
 Virtual reality can provide immersive interactions with time capsule contents.
-## 3 Data Preservation
+<h3>  3 Data Preservation</h3> 
 New techniques will enhance data integrity and the lifespan of digital archives
 
 
 <h2>Project Screenshots:</h2>
 
-<img src="/" alt="project-screenshot" width="400" height="400/">
-
+<div style="display:flex">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/2259b624-ebc2-4004-a591-ed8ca0e732da" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img1" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img2" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img3" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img4" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img5" alt="project-screenshot" width="400" height="">
+<img src="/public/screenshot/img7" alt="project-screenshot" width="400" height="">
+</div>
 
 
 
@@ -87,6 +95,8 @@ New techniques will enhance data integrity and the lifespan of digital archives
 clone the repo.
 
 ```bash
+
+
   npm install 
   npm run dev
 ```
