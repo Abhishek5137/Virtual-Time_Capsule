@@ -79,8 +79,15 @@ New techniques will enhance data integrity and the lifespan of digital archives
 
 <h2>Project Screenshots:</h2>
 
-<img src="/" alt="project-screenshot" width="400" height="400/">
-
+<div style="display: flex ">
+<img src="/pubic/screenshot/img1.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img2.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img3.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img4.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img5.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img6.png" alt="project-screenshot" width="400" height="">
+<img src="/pubic/screenshot/img7.png" alt="project-screenshot" width="400" height="">
+</div>
 
 
 
