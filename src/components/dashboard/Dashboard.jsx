@@ -1,7 +1,6 @@
 // Dashboard.jsx
 import React from 'react';
 import { Route, Link, Routes } from 'react-router-dom';
-import UserDashboard from './UserDashboard';
 import TimeCapsuleList from './TimeCapsule/VirtualTimeCapsuleList';
 import CreateTimeCapsuleForm from './TimeCapsule/CreateTimeCapsuleForm';
 import EditTimeCapsuleForm from './TimeCapsule/EditTimeCapsuleForm';
@@ -112,8 +111,8 @@ const Dashboard = () => {
                 <h1 className="text-gray-700  font-bold text-center  ">Timecapsule</h1>
               </div>
                   <div className='flex flex-wrap bg-slate-50 rounded-md m-1 p-2 shadow-xl  items-center justify-center'>
-                    <Card title="abhishek" backgroundImage="\src\assets\myvtc-logo.png" />
-                    <Card title="abhishek" backgroundImage="\src\assets\memoriesimg.png" />
+                    <Card title="abhishek" backgroundImage="/images/myvtc-logo.png" />
+                    <Card title="abhishek" backgroundImage="/images/memoriesimg.png" />
                     <Card title="Your Title" backgroundImage="url('/path/to/your/image.jpg')" />
                     <Card title="Your Title" backgroundImage="url('/path/to/your/image.jpg')" />
                   </div>
