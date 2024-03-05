@@ -7,43 +7,43 @@ information to be accessed in the future.
 
 <h1>Purpose and Significance of a Virtual Time capsule</h1>
 
-<h2> 1. Preserving Memories</h2>
+<h3>  1. Preserving Memories</h3>
     It allows individuals to document and safeguard their most cherished experiences  artefacts.
 
-<h2>2. Connecting Generations </h2>
+<h3> 2. Connecting Generations </h3>
    It bridges the gap between different time periods, enabling future generations to learn about 
     the past.
 
-<h2> 3. Celebrating Milestones</h2>
+<h3>  3. Celebrating Milestones</h3>
   
   Virtual time capsules can commemorate special events and achievements for posterity.
 
 #  Choosing the Contents of a Virtual Time Capsule
 
-<h2> 1. Photos and Videos</h2>
+<h3>  1. Photos and Videos</h3>
 Visual records of everyday life and 
 special occasions.
 
- <h2>2. Letters and Diaries</h2>
+ <h3> 2. Letters and Diaries</h3>
 Personal writings that provide insight 
 into the emotions and thoughts of the 
 author.
-<h2> 3. Artwork and Music</h2>
+<h3>  3. Artwork and Music</h3>
 Expressive mediums that capture the essence of a specific time and culture
 
  # Preserving and Storing a Virtual Time Capsule
 
- <h2>i. Digital Backup</h2>
+ <h3> i. Digital Backup</h3>
 Store the time capsule on 
 multiple devices to prevent 
 data loss.
 
-<h2>ii. Cloud Storage</h2>
+<h3> ii. Cloud Storage</h3>
 Utilize reliable cloud 
 platforms for long-term 
 archival of digital items.
 
-<h2>iii. Metadata Management</h2>
+<h3> iii. Metadata Management</h3>
 Include detailed descriptions 
 to aid in the organization and 
 retrieval of items.
@@ -68,18 +68,18 @@ prolonged accessibility.
 
 
 # Conclusion and Future Possibilities
-<h2> 1.Artificial Intelligence </h2>
+<h3>  1.Artificial Intelligence </h3> 
 AI advancements may enable personalized and intelligent curation of time 
 capsules.
-<h2> 2.Immersive Experiences</h2>
+<h3>  2.Immersive Experiences</h3> 
 Virtual reality can provide immersive interactions with time capsule contents.
-<h2> 3 Data Preservation</h2>
+<h3>  3 Data Preservation</h3> 
 New techniques will enhance data integrity and the lifespan of digital archives
 
 
 <h2>Project Screenshots:</h2>
 
-<img src="/" alt="project-screenshot" width="400" height="400/">
+<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/2259b624-ebc2-4004-a591-ed8ca0e732da" alt="project-screenshot" width="400" height="">
 
 
 
@@ -88,6 +88,8 @@ New techniques will enhance data integrity and the lifespan of digital archives
 clone the repo.
 
 ```bash
+
+
   npm install 
   npm run dev
 ```
