@@ -79,15 +79,8 @@ New techniques will enhance data integrity and the lifespan of digital archives
 
 <h2>Project Screenshots:</h2>
 
-<div style="display:flex">
-<img src="https://github.com/Abhishek5137/Virtuel-Time_Capsule/assets/111166632/2259b624-ebc2-4004-a591-ed8ca0e732da" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img1" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img2" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img3" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img4" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img5" alt="project-screenshot" width="400" height="">
-<img src="/public/screenshot/img7" alt="project-screenshot" width="400" height="">
-</div>
+<img src="/" alt="project-screenshot" width="400" height="400/">
+
 
 
 
