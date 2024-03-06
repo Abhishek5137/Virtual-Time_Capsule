@@ -29,14 +29,14 @@ const Navbar = ({ toggleAuthModal, auth }) => {
 
   return (
     <nav style={backgroundStyle}
-      className={` z-20 scrolled     bg-slate-800 ${isScrolled ? 'fixed top-0 w-full shadow-lg transition delay-500 duration-1000 ease-in-out bg-slate-900 transform scale-105' : ''}`}>
+      className={` z-20 scrolled     bg-slate-800 ${isScrolled ? 'fixed top-0 w-full shadow-lg transition delay-500 duration-1000 ease-in-out bg-slate-900 transform scale-100' : ''}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className=' rounded-lg hover:shadow-lg hover:bg-slate-700' >
 
           <Link to="/" >
             <img
-              src="\src\assets\myvtc-logo.png"
+              src="/images/myvtc-logo.png"
               className="h-14 w-32 m-0 p-1 rounded-lg   "
               alt="logo"
             />
