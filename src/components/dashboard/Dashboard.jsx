@@ -10,17 +10,19 @@ import EditMemory from './MemorySection/EditMemory';
 import MemoryList from './MemorySection/MemoryList';
 import Navbar from '../Navbar/Navbar';
 import Card from '../Card';
+import PostForm from '../Test';
 
 const Dashboard = () => {
 
   const links = [
-    { to: '/dashboard/createtimecapsule', label: 'Create Time Capsule' },
+    { to: '/createcapsule', label: 'Create Time Capsule' },
     { to: '/dashboard/edittimecapsule', label: 'Edit Time Capsules' },
     { to: '/dashboard/', label: 'Show VTC' },
-    { to: '/dashboard/creatememory', label: 'Create Memory' },
+    { to: '/createMemory', label: 'Create Memory' },
     { to: '/dashboard/editmemory', label: 'Edit Memory' },
     { to: '/dashboard/memorylist', label: 'Memories' },
   ];
+  
 
 
   return (
@@ -95,7 +97,7 @@ const Dashboard = () => {
               <Routes>
                 {/* <Route path="/" element={<UserDashboard />} /> */}
                 <Route path="/" element={<TimeCapsuleList />} />
-                <Route path="/createtimecapsule" element={<CreateTimeCapsuleForm />} />
+                <Route path="/createcapsule" element={<CreateTimeCapsuleForm />} />
                 <Route path="/edittimecapsule" element={<EditTimeCapsuleForm />} />
                 <Route path="/creatememory" element={<CreateMemory />} />
                 <Route path="/editmemory" element={<EditMemory />} />

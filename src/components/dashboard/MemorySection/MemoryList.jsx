@@ -1,6 +1,6 @@
-// MemoryList.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const MemoryList = () => {
   const [memories, setMemories] = useState([]);
@@ -10,7 +10,7 @@ const MemoryList = () => {
     // Fetch the list of memories from your backend API
     const fetchMemories = async () => {
       try {
-        const response = await axios.get('/api/memories'); // Adjust the endpoint based on your API
+        const response = await axios.get('/api/memory/allmemories'); // Adjust the endpoint based on your API
 
         // Ensure that the response data is an array before setting the state
         if (Array.isArray(response.data)) {
@@ -39,15 +39,21 @@ const MemoryList = () => {
       ) : memories.length === 0 ? (
         <p>No memories available.</p>
       ) : (
-        <ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {memories.map((memory) => (
-            <li key={memory.id} className="mb-4">
-              <h3 className="text-lg font-bold">{memory.title}</h3>
-              <p>{memory.description}</p>
-              {/* Add more details or actions as needed */}
-            </li>
+            <Link key={memory._id} to={`/memory/${memory._id}`}>
+              <div className="bg-white rounded-lg shadow-md p-4 cursor-pointer">
+                <h3 className="text-lg font-bold mb-2">{memory.title}</h3>
+                <p className="mb-2">{memory.description}</p>
+                <div className="grid grid-cols-2 gap-2">
+                  {memory.selectedFiles.map((file, index) => (
+                    <img key={index} src={file} alt='no image' className="w-full h-auto" />
+                  ))}
+                </div>
+              </div>
+            </Link>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );

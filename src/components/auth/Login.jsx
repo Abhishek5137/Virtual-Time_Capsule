@@ -6,10 +6,10 @@ const Login = ({onLogin}) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
     // Add authentication logic here
     onLogin({email,password})
-    console.log('Logging in with:', email, password);
+    // console.log('Logging in with:', email, password);
   };
 
   return (
