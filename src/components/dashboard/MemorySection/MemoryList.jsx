@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MemoryList = () => {
   const [memories, setMemories] = useState([]);
   const [error, setError] = useState(null);
-
+  
   useEffect(() => {
     // Fetch the list of memories from your backend API
     const fetchMemories = async () => {
