@@ -10,7 +10,7 @@ const VirtualTimeCapsuleList = () => {
     const fetchTimeCapsules = async () => {
       try {
         const response = await axios.get('/api/capsule/allCapsules'); // Adjust the endpoint based on your API
-
+       console.log(response)
         // Check if the response data is an array
         if (Array.isArray(response.data)) {
           setTimeCapsules(response.data);
@@ -36,12 +36,18 @@ const VirtualTimeCapsuleList = () => {
       {timeCapsules.length === 0 ? (
         <p>No virtual time capsules available.</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-96 gap-4 ">
+               {/*  */}
+
           {timeCapsules.map((timeCapsule) => (
              <Link key={timeCapsule._id} to={`/timecapsule/${timeCapsule._id}`}>
             <div key={timeCapsule._id} className="bg-white rounded-lg shadow-md p-4">
-              <h3 className="text-lg font-bold mb-2">{timeCapsule.title}</h3>
-              <p className="mb-2">{timeCapsule.description}</p>
+              <h3 className="text-lg font-bold mb-2 bg-blue-100 rounded-md p-2">Title : 
+               <span className='text-slate-700 pl-3'>
+                {timeCapsule.title}
+                 </span>
+               </h3>
+              <p className="mb-2 bg-blue-50 p-2 rounded-md">Description :-{timeCapsule.description}</p>
               <p className="text-sm text-gray-500 mb-2">Reminder Date: {convertToLocalTime(timeCapsule.reminderDate)}</p>
               
               <div className="grid grid-cols-2 gap-2">

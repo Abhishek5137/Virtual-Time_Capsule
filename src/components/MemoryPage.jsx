@@ -1,9 +1,7 @@
-
-
-
 import React, { useState } from 'react';
 import Navbar from './Navbar/Navbar';
 import Auth from './auth/Auth';
+import Footer from './Footer/Footer'
 
 function MemoryPage() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
@@ -137,6 +135,7 @@ function MemoryPage() {
       </div>
 
       </div>
+      <Footer/>
     </>
   );
 }
