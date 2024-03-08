@@ -10,6 +10,11 @@ const IntroductionPage = () => {
 
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
+
+const handleclick = ()=>{
+  alert("Please login before creating")
+}
+
   const toggleAuthModal = () => {
     setIsAuthModalOpen((prev) => !prev);
   };
@@ -46,7 +51,9 @@ const IntroductionPage = () => {
               </p>
 
               <div className='m-4'>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600">
+                <button 
+                onClick={handleclick}
+                className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-600">
                   Create your virtual time Capsule
                 </button>
               </div>
@@ -66,6 +73,7 @@ const IntroductionPage = () => {
                   The ability to send your life stories to anyone at a later date in the future. Simply upload the memory, enter the recipient's information, and pick a date in the future. These files are then safely stored and sent back until the desired date; creating a nice nostalgic surprise.
                 </p>
                 <button
+                onClick={handleclick}
                   className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-600"
                 >
                   Preserve Your Stories

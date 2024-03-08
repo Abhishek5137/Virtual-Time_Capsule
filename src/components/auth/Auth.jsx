@@ -31,6 +31,7 @@ const Auth = ({ closeModal }) => {
         console.log('Signup Data:', signupData);
         // Close the modal after signup
         closeModal();
+        alert("user reated suceesfully!")
         // Redirect to the dashboard
         navigate('/dashboard');
       }
@@ -52,17 +53,21 @@ const Auth = ({ closeModal }) => {
       });
       const data = await response.json();
       if (!response.ok) {
+       
         throw new Error(data.message || 'Something went wrong!');
+        
       }
       if(response.ok){
         console.log('Login Data:', loginData);
         // Close the modal after login
         closeModal();
+        alert("Sucessfully login")
         // Redirect to the dashboard
         navigate('/dashboard');
       }
     }
     catch (error) {
+     alert("No Account found !Please create an account ")
       console.error('Error occured:', error);
     }
   };
