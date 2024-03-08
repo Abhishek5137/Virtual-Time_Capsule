@@ -31,17 +31,17 @@ const VirtualTimeCapsuleList = () => {
   };
 
   return (
-    <div>
+    <div className='-mb-10'>
       <h2 className="text-2xl font-bold mb-4">Virtual Time Capsules</h2>
       {timeCapsules.length === 0 ? (
         <p>No virtual time capsules available.</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 h-96 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
                {/*  */}
 
           {timeCapsules.map((timeCapsule) => (
              <Link key={timeCapsule._id} to={`/timecapsule/${timeCapsule._id}`}>
-            <div key={timeCapsule._id} className="bg-white rounded-lg shadow-md p-4">
+            <div key={timeCapsule._id} className="bg-white rounded-lg  p-4  shadow-lg shadow-cyan-900 hover:shadow-cyan-500 h-96  overflow-y-scroll no-scrollbar">
               <h3 className="text-lg font-bold mb-2 bg-blue-100 rounded-md p-2">Title : 
                <span className='text-slate-700 pl-3'>
                 {timeCapsule.title}

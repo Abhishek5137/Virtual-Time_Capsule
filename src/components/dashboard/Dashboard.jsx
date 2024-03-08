@@ -91,8 +91,8 @@ const Dashboard = () => {
           </aside>
 
           {/* Main Content */}
-          <div className=" w-full  flex h-screen ">
-            <div className="w-4/5 border  rounded-md p-4 m-3     overflow-y-scroll no-scrollbar ">
+          <div className=" w-full  flex h-screen  ">
+            <div className="w-4/5 border  rounded-md p-4 m-3   overflow-y-scroll no-scrollbar ">
               <main >
                 {/* Routes for Main Content */}
                 <Routes>
@@ -116,7 +116,7 @@ const Dashboard = () => {
                 </div>
                 <div className='flex flex-wrap bg-slate-50 rounded-md m-1 p-2 shadow-xl  items-center justify-center'>
 
-                  <CardContainer/>
+                  <CardContainer />
 
 
                   {/* <Card title="abhishek" backgroundImage="/images/myvtc-logo.png" />

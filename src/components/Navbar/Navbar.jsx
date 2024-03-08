@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import Auth from '../auth/Auth';
 
 
@@ -21,6 +21,9 @@ const Navbar = ({ toggleAuthModal, auth }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+// handlelogout
+
 
   const backgroundStyle = {
 
@@ -64,6 +67,7 @@ const Navbar = ({ toggleAuthModal, auth }) => {
           >
             {auth}
           </button>
+          
         </div>
       </div>
     </nav>
