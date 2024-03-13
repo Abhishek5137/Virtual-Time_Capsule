@@ -1,6 +1,6 @@
 // Auth.jsx
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Login from './Login';
 import Signup from './Signup';
 
@@ -31,6 +31,7 @@ const Auth = ({ closeModal }) => {
         console.log('Signup Data:', signupData);
         // Close the modal after signup
         closeModal();
+        alert("user reated suceesfully!")
         // Redirect to the dashboard
         navigate('/dashboard');
       }
@@ -52,17 +53,21 @@ const Auth = ({ closeModal }) => {
       });
       const data = await response.json();
       if (!response.ok) {
+       
         throw new Error(data.message || 'Something went wrong!');
+        
       }
       if(response.ok){
         console.log('Login Data:', loginData);
         // Close the modal after login
         closeModal();
+        alert("Sucessfully login")
         // Redirect to the dashboard
         navigate('/dashboard');
       }
     }
     catch (error) {
+     alert("No Account found !Please create an account ")
       console.error('Error occured:', error);
     }
   };
@@ -74,7 +79,7 @@ const Auth = ({ closeModal }) => {
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-75">
       <div className="bg-slate-200 p-2 rounded-md max-w-2xl w-full">
-        <div flex flex-col> 
+        <div > 
         <div className='w-full flex  items-center justify-end '>
             <button onClick={handleRedirect}
               type="button"
