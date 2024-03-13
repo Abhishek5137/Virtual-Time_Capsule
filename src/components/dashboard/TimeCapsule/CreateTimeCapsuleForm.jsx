@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateTimeCapsuleForm = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [reminderDate, setReminderDate] = useState("");
   const [selectedFiles, setSelectedFiles] = useState([]);
+  const navigate = useNavigate();
 
 
   const handleChangeFiles = (e) => {
@@ -40,6 +42,7 @@ const CreateTimeCapsuleForm = () => {
   
     if (response.ok) {
       console.log("Capsule Created");
+      navigate("/dashboard");
     } else {
       console.log("Error creating capsule");
     }
