@@ -35,10 +35,16 @@ handleclick = ()=>{
       {isAuthModalOpen && <Auth closeModal={toggleAuthModal} />}
 
       <div className='bg-[#e393e63d] -mb-6 '>
-        <div style={myStyle} className="  bg-cover bg-no-repeat bg-center h-screen flex items-center justify-center flex-col shadow-2xl   ">
-
-          <div className=' w-full'>
-            <div className='w-1/2  '>
+          
+      {/*  */}
+        <div style={myStyle} className="  bg-cover bg-no-repeat bg-center h-screen flex items-center justify-center flex-col  shadow-2xl   ">
+          {/* <video  className='w-full h-auto block ' autoPlay role="presentation" preload="auto" playsinline="" crossorigin="anonymous" loop muted autoplay="">
+          <source src="/images/vtcvideo.mp4" type="video/webm"></source>
+          </video> */}
+        
+          <div className=' w-full h-screen flex items-center  top-0'>
+          
+            <div className='w-1/2 '>
               <h1 className="text-5xl text-emerald-50 font-bold  font-sans m-1 ">
                 Virtual Time Capsule App :
               </h1 >
@@ -59,7 +65,9 @@ handleclick = ()=>{
                 </button>
               </div>
             </div>
+            
           </div>
+          
         </div>
 
 

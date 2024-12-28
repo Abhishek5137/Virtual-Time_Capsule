@@ -31,7 +31,7 @@ const Auth = ({ closeModal }) => {
         console.log('Signup Data:', signupData);
         // Close the modal after signup
         closeModal();
-        alert("user reated suceesfully!")
+        alert("User Created suceesfully!")
         // Redirect to the dashboard
         navigate('/dashboard');
       }
